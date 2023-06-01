@@ -34,7 +34,7 @@ function has_shortcode() {
      $all_content = get_the_content();
      
      // Edit the '[shortcode' string to match the shortcode you'd like to exclude from cache.
-     if (strpos($all_content, '[shortcode') !== false) {
+     if (strpos($all_content, '[easyazon_image') !== false) {
 	 	return true;
      } else {
 	 	return false;
